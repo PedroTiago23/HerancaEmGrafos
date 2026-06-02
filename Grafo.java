@@ -6,7 +6,7 @@ abstract class Grafo{
 
     public void removerVertice(String vertices){}
 
-    public void adicioanarAresta(String origem, String destino){}
+    public void adicionarAresta(String origem, String destino){}
         
     public void removerAresta(String origem, String destino){}
 
