@@ -1,37 +1,34 @@
 package HerancaEmGrafos;
-abstract class Grafo{
-    public static void main (String[] args){}
+
+public abstract class Grafo {
+
     
-    public void adicionarVertice(String vertices){}
+    public abstract void adicionarVertice(String vertice);
 
-    public void removerVertice(String vertices){}
-
-    public void adicionarAresta(String origem, String destino){}
-        
-    public void removerAresta(String origem, String destino){}
-
-    public boolean existeVertice(String vertice){
-        return true;
-    }
-
-    public boolean existeAresta(String aresta){
-        return true;
-    }
-
-    public int grau(String vertice){
-        return 0;
-    }
-
-    public int ordem(){
-        return 0;
-    }
-
-    public int tamanho(){
-        return 0;
-    }
     
-    public String toString(){
-        return "";
-    }
+    public abstract void removerVertice(String vertice);
 
-}   
+    
+    public abstract void adicionarAresta(String origem, String destino);
+
+    
+    public abstract void removerAresta(String origem, String destino);
+
+    
+    public abstract boolean existeVertice(String vertice);
+
+    
+    public abstract boolean existeAresta(String origem, String destino);
+
+    
+    public abstract int grau(String vertice);
+
+   
+    public abstract int ordem();
+
+    
+    public abstract int tamanho();
+    
+    @Override
+    public abstract String toString();
+}
