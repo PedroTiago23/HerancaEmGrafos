@@ -20,10 +20,9 @@ public class GrafoListaAdjacencia extends Grafo {
         }
     }
 
-    @Override
-    public boolean existeVertice(String vertice) {
-        return adjacencias.containsKey(vertice);
-    }
+    public void removerVertice(String vertice){
+        
+    };
 
     @Override
     public void adicionarAresta(String origem, String destino) {
@@ -35,10 +34,42 @@ public class GrafoListaAdjacencia extends Grafo {
             adjacencias.get(destino).add(origem); 
         }
     }
+    
+    public void removerAresta(String origem, String destino){
+
+    };
+
+    
+    public boolean existeVertice(String vertice){
+        return adjacencias.containsKey(vertice);
+    };
 
     @Override
-    public boolean existeAresta(String origem, String destino) {
+    public boolean existeAresta(String origem, String destino){
         return existeVertice(origem) && adjacencias.get(origem).contains(destino);
-    }
+    };
+
     
+    public int grau(String vertice){
+        return 0;
+    };
+
+   
+    public int ordem(){
+        return 0;
+    };
+
+    
+    public int tamanho(){
+        return 0;
+    };
+    
+    @Override
+    public String toString(){
+        return "";
+    };
+
+
+
+
 }
