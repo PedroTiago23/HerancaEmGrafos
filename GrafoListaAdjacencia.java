@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 public class GrafoListaAdjacencia extends Grafo {
-    
     private Map<String, List<String>> adjacencias;
 
     public GrafoListaAdjacencia() {
@@ -21,7 +20,7 @@ public class GrafoListaAdjacencia extends Grafo {
     }
 
     public void removerVertice(String vertice){
-        
+
     };
 
     @Override

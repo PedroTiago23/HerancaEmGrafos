@@ -151,7 +151,6 @@ public class GrafoMatrizAdjacencia extends Grafo {
                         valor1 = valor2;
                         valor2 = temp;
                     }
-
                     linhasArestas.add("  \"" + valor1 + "\" -- \"" + valor2 + "\";");
                 }
             }
